@@ -327,11 +327,40 @@
         }
 
         @media (max-width: 720px) {
-            .grid-2 { grid-template-columns: 1fr; }
-            .metrics-grid { grid-template-columns: 1fr 1fr; }
+            /* Header */
+            .header { padding: 20px 16px 16px; text-align: center; }
+            .header h1 { font-size: 1.35rem; }
+            .header p { font-size: 0.8rem; }
+            .lang-toggle { position: static; margin: 14px auto 0; display: inline-flex; }
+
+            /* Layout */
+            .container { padding: 16px 12px; }
+            .grid-2 { grid-template-columns: 1fr; gap: 14px; }
             .settings-grid { grid-template-columns: 1fr; }
-            .lang-toggle { position: static; margin: 12px auto 0; display: inline-flex; }
-            .header { padding-bottom: 20px; }
+            .card { padding: 16px; }
+            .card-shared { margin-bottom: 14px; }
+
+            /* Metrics */
+            .metrics-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+            .metric { padding: 14px 10px; }
+            .metric-value { font-size: 1.3rem; }
+            .metric-label { font-size: 0.65rem; }
+
+            /* Inputs */
+            input[type="number"] { font-size: 0.95rem; padding: 9px 10px; }
+            .unit { min-width: 72px; font-size: 0.75rem; }
+
+            /* Buttons — bigger tap targets */
+            .btn { padding: 9px 12px; font-size: 0.76rem; }
+
+            /* Bars */
+            .bar-card { padding: 16px; }
+            .bar-label { width: 90px; min-width: 90px; font-size: 0.72rem; }
+            .bar-fill { font-size: 0.72rem; min-width: 60px; padding: 0 8px; }
+
+            /* Chart */
+            .chart-card { padding: 16px; }
+            .breakeven-box { font-size: 0.8rem; padding: 12px 14px; }
         }
     </style>
 </head>
